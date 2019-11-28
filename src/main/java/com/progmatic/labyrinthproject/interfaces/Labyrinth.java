@@ -11,7 +11,7 @@ import java.util.List;
  *
  * @author pappgergely
  */
-public interface Labyrinth {
+public interface    Labyrinth {
     
     /**
      * Returns the labyrinth's width.
@@ -30,7 +30,7 @@ public interface Labyrinth {
      * Should also set the player's position to the START cell. 
      * @param fileName the exact path and name of the file to load.
      */
-    void loadLabyrinthFile(String fileName);
+    void loadLabyrinthFile(String fileName) throws CellException;
     
     /**
      * Returns the Cell's content at c.row, c.col
